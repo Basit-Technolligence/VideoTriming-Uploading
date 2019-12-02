@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode==100 && resultCode== RESULT_OK){
             selectedUri=data.getData();
-            Intent i= new Intent (MainActivity.this, Trim.class);
+            Intent i= new Intent (MainActivity.this, VideoView.class);
             i.putExtra("uri", selectedUri.toString());
             startActivity(i);
         }
