@@ -5,29 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".VideoViewActivity">
+
     <VideoView
         android:id="@+id/videoView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/input"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        ></VideoView>
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"></VideoView>
+
     <EditText
+        android:id="@+id/input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:hint="Enter total no. pieces"
         android:layout_above="@id/btnSubmit"
-        android:layout_marginBottom="2dp"
-        android:id="@+id/input"></EditText>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_marginBottom="2dp"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:hint="Enter total no. pieces"></EditText>
+
+    <Button
         android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
         android:text="Submit"></Button>
 </RelativeLayout>
